@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 강원교육튼튼 */
+
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.notosanskr * { 
+  font-family: 'Noto Sans KR', sans-serif !important;
+}
+.gangwondEduBold{
+  font-family: 'GangwonEduPowerExtraBoldA', sans-serif !important;
+}
+.gangwondEduBold *{
+  font-family: 'GangwonEduPowerExtraBoldA', sans-serif !important;
+}
+
+/* 노토산스 */
+
+legend{
+    display: inherit;
+    width: inherit;
+    margin: inherit;
+    color: inherit;
+    border-bottom: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+a:hover, a:focus{
+    color: inherit;
+    text-decoration: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, input, button,textarea, select {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+p, h1, .h1, h2, .h2, h3, .h3, ul, li{
+    margin: 0;
+    word-break: keep-all;
+}
+/* h1, h2, h3, h4, h5, h6 {
+}
+input, button {
+}
+textarea, select{
+} */
+.hide{
+    display: block !important;
+}
+img{
+    max-width: 100%;
+}
+.col-xs-12-5{
+    width: 20%;
+    float: left;
+    padding: 0 15px;
+}
+.spoqa-han-sans-neo{
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important;
+}
+@media(min-width:1200px){
+    .col-lg-12-5{
+        width: 20%;
+        float: left;
+        padding: 0 15px;
+    }
+    
+}
+@media(min-width:992px){
+    .col-md-12-5{
+        width: 20%;
+        float: left;
+        padding: 0 15px;
+        
+    }
+}
+@media(min-width:768px){
+    .col-sm-12-5{
+        width: 20%;
+        float: left;
+        padding: 0 15px;
+    }
+}
+
+
+@media(min-width:1350px){
+    .container{
+        width: 1320px !important;
+    }
+}

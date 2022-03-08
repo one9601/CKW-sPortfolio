@@ -27,17 +27,17 @@
         </div>
         <ul class="menu clearfix">
           <li>
-            <a href="#">
+            <a href="#aboutme">
               About me
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#archiving">
               Archiving
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#portfolio">
               Portfolio
             </a>
           </li>
@@ -62,7 +62,7 @@
       </div>
     </section>
 
-    <section class="main_s2 main_sec">
+    <section class="main_s2 main_sec" id="aboutme">
       <div class="container">
         <div class="main_s2_tit main_tit">
           <h3>About me</h3>
@@ -231,7 +231,7 @@
       </div>
     </section>
 
-    <section class="main_s3 main_sec">
+    <section class="main_s3 main_sec" id="archiving">
       <div class="container">
         <div class="main_s3_tit main_tit">
           <h3>Archiving</h3>
@@ -268,7 +268,7 @@
       </div>
     </section>
 
-    <section class="main_s4 main_sec">
+    <section class="main_s4 main_sec" id="portfolio">
       <div class="container">
         <div class="main_tit main_s4_tit main_s3_tit">
           <h3>Portfolio</h3>
@@ -286,7 +286,7 @@
                     <h3>
                       유림 노르웨이 아침
                     </h3>
-                    <p>#1人개발 #그누보드</p>
+                    <p>#그누보드 #스크롤 인터랙션</p>
                   </div>
                 </div>
               </div>
@@ -467,5 +467,17 @@
       </div>
     </footer>
   </div>
+
+  <script>
+    var scroll = $(window).scrollTop();
+
+    $(window).scroll(function(e){
+      if($(this).scrollTop() > 5){
+        $('.menu_wrap').addClass("scrolled");
+      } else {
+        $('.menu_wrap').removeClass("scrolled");
+      }
+    })
+  </script>
 </body>
 </html>

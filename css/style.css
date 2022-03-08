@@ -66,12 +66,15 @@ body *{
     top: 0;
     left: 0;
     z-index: 999;
+    transition: all 0.3s ease-in;
  }
  .menu_wrap .logo{
     float: left;
  }
  .menu_wrap .logo a{
    font-size: 30px;
+   position: relative;
+   top: 5px;
  }
  .menu_wrap .menu{
    float: right;
@@ -81,7 +84,9 @@ body *{
    font-size: 21px;
    padding: 0 15px; 
  }
-
+ .menu_wrap.scrolled{
+   background: rgba(0,0,0,0.9);
+ }
 
 
  /* ==== head ==== */

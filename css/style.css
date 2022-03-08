@@ -191,6 +191,7 @@ body *{
 
  .main_s2_tit h3::before{
     display: none;
+    text-align: left;
   }
   .main_s2_tit{
     margin-bottom: 50px;
@@ -452,6 +453,9 @@ body *{
  /* ==== main_banner ==== */
  .main_s2_tit h3::before{
    display: block;
+ }
+ .main_s2_tit {
+   text-align: center;
  }
   .main_s2_tit{
     text-align: center;

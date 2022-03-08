@@ -42,16 +42,31 @@ table {
 	border-spacing: 0;
 }
 
+body, h1, h2, h3, h4, h5, h6, input, button,textarea, select, p {
+  font-family: 'noto sans kr', sans-serif;
+}
+
+body *{
+  word-break: keep-all;
+}
 /* ==== reset css ==== */
  
- 
+
+  .main_banner article h3, .main_banner article p{
+    line-height: 130% !important;
+  }
+  .menu_wrap *{
+    color: #fff;
+  }
  .menu_wrap{
     width: 100%;
     height: 90px;
     line-height: 90px;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
  }
-
  .menu_wrap .logo{
     float: left;
  }
@@ -65,4 +80,525 @@ table {
    float: left;
    font-size: 21px;
    padding: 0 15px; 
+ }
+
+
+
+ /* ==== head ==== */
+
+ .main_sec{
+   width: 100%;
+   height: auto;
+   position: relative;
+   padding: 120px 0;
+ }
+ .main_tit{
+   text-align: center;
+ }
+ .main_tit h3{
+  font-family: 'GangwonEduPowerExtraBoldA', sans-serif !important;
+  font-size: 60px;
+  position: relative;
+  display: inline-block;
+  line-height: 60px !important;
+ }
+ .main_tit h3::before, .main_tit h3::after{
+   content: "";
+   display: block;
+   width: 100px;
+   height: 2px;
+   background: #f5cc98;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   -webkit-transform: translateY(-50%);
+ }
+ .main_tit h3::before{
+  left: -150px;
+ }
+ .main_tit h3::after{
+  right: -150px;
+ }
+
+ @media(max-width:767px){
+  .main_sec{
+    padding: 60px 0;
+  }
+  .main_tit h3{
+   font-size: 40px;
+   line-height: 40px !important;
+  }
+  .main_tit h3::before, .main_tit h3::after{
+    width: 70px;
+  }
+  .main_tit h3::before{
+   left: -100px;
+  }
+  .main_tit h3::after{
+   right: -100px;
+  }
+ }
+
+
+
+ /* ==== common ==== */
+
+ .main_banner{
+	 width: 100%;
+	 height: 90vh;
+	 position: relative;
+	 background: url(../img/main_banner.jpg);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 background-position: center center;
+ }
+ .main_banner article{
+   position: absolute;
+   width: 100%;
+   top: calc(50% + 45px);
+   left: 50%;
+   transform: translate(-50%,-50%);
+   -webkit-transform: translate(-50%,-50%);
+   padding: 0 15px;
+ }
+ .main_banner article *{
+	color: #fff;
+	text-align: center;
+ }
+ .main_banner_tit{
+	font-size: 60px;
+  position: relative;
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+ }
+ .main_banner_tit::after{
+   content: "";
+   display: block;
+   width: 100px;
+   height: 2px;
+   background: #f5cc98;
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   -webkit-transform: translateX(-50%);
+ }
+ .main_banner_txt{
+   font-size: 27px;
+ }
+
+ /* ==== main_banner ==== */
+
+ .main_s2_tit h3::before{
+    display: none;
+  }
+  .main_s2_tit{
+    margin-bottom: 50px;
+  }
+  .main_s2_rightBox{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background: #fff;
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 15px;
+  }
+  .main_s2_rightTit{
+    font-size: 40px;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+  .main_s2_rightTit::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+  }
+  .skill_icons_wrap .skill_icons{
+    float: left;
+    padding: 0 15px;
+    width: 14.2%;
+    text-align: center;
+  }
+  .skill_icons_wrap .skill_icons p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  .skill_list_wrap{
+    margin-top: 60px;
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  .skill_list_wrap .skills_list{
+    float: left;
+    padding: 0 25px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .main_s2_bottom{
+    margin-top: 70px;
+  }
+  .main_s2_bottom > ul {
+    margin-bottom: 50px;
+  }
+  .main_s2_info_stat{
+    display: table;
+    margin-bottom: 30px !important;
+  }
+  .main_s2_info_stat_2{
+    margin: 0 auto;
+    max-width: 261px;
+    width: 100%;
+  }
+  .main_s2_info_stat_3{
+    max-width: 200px;
+    width: 100%;
+    margin: 0 0 0 auto;
+  }
+  .main_s2_info_icon, .main_s2_info_art{
+    display: table-cell;
+    vertical-align: top;
+  }
+  .main_s2_info_icon{
+    width: 90px;
+  }
+  .main_s2_info_art h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .main_s2_info_art p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+
+  /* ==== main_s2 ==== */
+  .main_s3{
+    background: #fff4e5;
+  }
+  .main_s3_tit{
+    margin-bottom: 70px;
+  }
+  .main_s3_tit p{
+    font-size: 21px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 150%;
+  }
+  .main_s3_tit p span{
+    font-weight: bold;
+    border-bottom: 1px solid #000;
+  }
+
+  .main_s3_conBox{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .main_s3_conBox img{
+    width: 100%;
+  }
+  .main_s3_conBox .main_s3_txt{
+    position: absolute;
+    width: 100%;
+    padding: 0 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .main_s3_conBox .main_s3_txt h3{
+    color: #fff;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .main_s3_conBox .main_s3_txt p{
+    font-size: 30px;
+    color: #258ddb;
+    font-weight: bold;
+  }
+
+
+  /* ==== main_s3 ==== */
+  .main_s4_tit{
+    margin-bottom: 70px;
+  }
+  .main_s4_conBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .main_s4_conBox img{
+    width: 100%;
+  }
+  .main_s4_conBox .main_s4_con_arc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background: rgba(255,255,255,0.85);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+  .main_s4_conBox .main_s4_con_arc > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+  }
+  .main_s4_conBox .main_s4_con_arc > div h3{
+    color: #181818;
+    font-weight: bold;
+    font-size: 27px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 25px;
+  }
+  .main_s4_conBox .main_s4_con_arc > div h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: #f5cc98;
+  }
+  .main_s4_conBox .main_s4_con_arc > div p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #e44d26;
+  }
+  .main_s4_conBox:hover .main_s4_con_arc{
+    opacity: 1;
+  }
+
+  /* === main_s4 ==== */
+
+  .footer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px 0;
+    background: #000;
+  }
+  .footer p{
+    color: #fff;
+    font-size: 27px;
+  }
+
+  /* ==== footer ==== */
+
+
+ @media(max-width:992px){
+    
+ .menu_wrap{
+    height: 70px;
+    line-height: 70px;
+ }
+ .menu_wrap .logo a{
+   font-size: 24px;
+ }
+
+ .menu_wrap .menu li{
+   font-size: 18px;
+ }
+ .menu_wrap .menu{
+   display: none;
+ }
+
+ /* ==== head ==== */
+ .main_banner article{
+   top: 50%;
+ }
+ .main_banner_tit{
+	font-size: 48px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+ }
+ .main_banner_tit::after{
+   width: 80px;
+ }
+ .main_banner_txt{
+   font-size: 24px;
+ }
+ .main_s2_leftImg{
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ /* ==== main_banner ==== */
+ .main_s2_tit h3::before{
+   display: block;
+ }
+  .main_s2_tit{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .main_s2_rightBox{
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .main_s2_rightTit{
+    font-size: 30px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  .skill_icons_wrap .skill_icons{
+    float: left;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    width: 25%;
+    text-align: center;
+  }
+  .skill_icons_wrap .skill_icons p{
+    font-size: 16px;
+  }
+
+  .skill_list_wrap{
+    margin-top: 40px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .skill_list_wrap .skills_list{
+    width: 50%;
+    padding: 0 15px;
+  }
+  .main_s2_bottom{
+    margin-top: 50px;
+  }
+  .main_s2_bottom > ul {
+    margin-bottom: 30px;
+  }
+
+  .main_s2_info_stat{
+    max-width: 300px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    margin-bottom: 50px !important;
+  }
+  .main_s2_info_art h3{
+    font-size: 21px;
+  }
+  .main_s2_info_art p{
+    font-size: 16px;
+  }
+
+
+ /* ==== main _s2 ==== */
+ }
+
+
+ @media(max-width:767px){
+ .menu_wrap .logo a{
+   font-size: 21px;
+ }
+
+ .menu_wrap .menu li{
+   font-size: 16px;
+ }
+
+ /* ==== head ==== */
+ .main_banner_tit{
+	font-size: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+ }
+ .main_banner_txt{
+   font-size: 21px;
+ }
+
+ /* ==== main_banner ==== */
+
+
+ /* main_s2 */
+
+  .main_s3_tit{
+    margin-bottom: 50px;
+  }
+  .main_s3_tit p{
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .main_s3_tit p br{
+    display: none;
+  }
+  .main_s3_conBox{
+    margin-bottom: 30px;
+  }
+  .main_s3_conBox .main_s3_txt h3{
+    font-size: 24px;
+  }
+  .main_s3_conBox .main_s3_txt p{
+    font-size: 16px;
+  }
+
+ /* ==== main_s3 ==== */
+
+ .main_s4_tit{
+  margin-bottom: 50px;
+}
+.main_s4_conBox .main_s4_con_arc{
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: initial;
+  -webkit-transform: initial;
+  height: auto;
+  padding: 0 15px;
+  padding-top: 15px;
+  background: none;
+  opacity: 1;
+  transition: initial;
+}
+.main_s4_conBox .main_s4_con_arc > div{
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: initial;
+  -webkit-transform: initial;
+  height: auto;
+}
+.main_s4_conBox .main_s4_con_arc > div h3{
+  font-size: 21px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.main_s4_conBox .main_s4_con_arc > div p{
+  font-size: 16px;
+}
+
+
+
+ /* ==== main_s4 ==== */
+
+
+ .footer p{
+   font-size: 16px;
+ }
+
+ /* === footer === */
  }

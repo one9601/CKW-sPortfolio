@@ -45,7 +45,10 @@ table {
 body, h1, h2, h3, h4, h5, h6, input, button,textarea, select, p {
   font-family: 'noto sans kr', sans-serif;
 }
-
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
 body *{
   word-break: keep-all;
 }

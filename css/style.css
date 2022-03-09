@@ -314,6 +314,14 @@ body *{
     position: relative;
     width: 100%;
     height: auto;
+    transition: all 0.3s ease-in;
+    top: 0;
+  }
+  .main_s3_conBox:hover {
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    top: -10px;
   }
   .main_s3_conBox img{
     width: 100%;
